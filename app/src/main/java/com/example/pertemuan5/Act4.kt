@@ -10,5 +10,8 @@ import androidx.compose.ui.layout.ParentDataModifier
 
 @Composable
 fun FormDataDiri(modifier: Modifier) {
-    var textNama by remember {mutableStateOf("")
+    var textNama by remember {mutableStateOf("")}
+    var textAlamat by remember {mutableStateOf("")}
+
+
     }
