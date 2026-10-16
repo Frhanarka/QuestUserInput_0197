@@ -3,6 +3,7 @@ package com.example.pertemuan5
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -80,10 +81,21 @@ fun FormDataDiri(modifier: Modifier) {
                 bottom =
                     dimensionResource(R.dimen.padding_medium),
                 top = dimensionResource(
-                    R.dimen.padding_medium)
-                ),
-                thickness = dimensionResource(R)
-            )
+                    R.dimen.padding_medium
+                )
+            ),
+            thickness = dimensionResource(R.dimen.divider_tipis),
+            color = Color.DarkGray
         )
+        Button(
+            modifier = Modifier.fillMaxWidth(1f),
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                Nama = textNama
+                Jenis = textJK
+                Alamat = textAlamat
+            }
+        ) {
+        }
     }
 }
